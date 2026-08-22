@@ -1,0 +1,20 @@
+/* 본문 줄 간격 · 자간 미세조정 */
+.md-typeset {
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+}
+
+/* 인용문에 좌측 세로선 강조 */
+.md-typeset blockquote {
+  border-left-width: 4px;
+}
+
+/* 각주 번호 크기 */
+.md-typeset .footnote-ref {
+  font-size: 0.75em;
+}
+
+/* 표 헤더에 살짝 강한 대비 */
+.md-typeset table th {
+  font-weight: 600;
+}
