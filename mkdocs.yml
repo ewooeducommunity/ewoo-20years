@@ -67,3 +67,4 @@ plugins:
 
 nav:
   - 홈: index.md
+  - 발간사: 발간사.md
