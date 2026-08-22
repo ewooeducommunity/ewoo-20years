@@ -30,13 +30,16 @@
 
 ### HWPX/HWP 원본을 Markdown 으로 변환
 
-`scripts/convert.py` 를 사용:
+두 단계로 처리합니다 (macOS Homebrew의 LibreOffice가 HWP 필터를 포함하지 않아 자동 변환이 안 됨):
 
-```bash
-brew install --cask libreoffice   # 처음 한 번만
-brew install pandoc               # 처음 한 번만
-python scripts/convert.py <원본.hwpx> -o /tmp/ewoo-convert
-```
+1. **한글 오피스에서 원본을 DOCX로 저장** (`파일 → 다른 이름으로 저장 → Microsoft Word 문서(*.docx)`).
+2. **DOCX를 Markdown으로 변환**:
+   ```bash
+   brew install pandoc               # 처음 한 번만
+   python scripts/convert.py <원본.docx> -o /tmp/ewoo-convert
+   ```
+
+한글 오피스가 없는 환경이라면 원본 소유자에게 DOCX 변환본을 요청하세요.
 
 ## 파일·URL 컨벤션
 
