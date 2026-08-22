@@ -1,5 +1,9 @@
 site_name: 이우교육공동체 20년사
 site_description: 이우교육공동체 20주년 기념 아카이브
+site_url: https://ewooeducommunity.github.io/ewoo-20years/
+repo_url: https://github.com/ewooeducommunity/ewoo-20years
+repo_name: ewooeducommunity/ewoo-20years
+edit_uri: edit/main/docs/
 docs_dir: docs
 use_directory_urls: true
 
