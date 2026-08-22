@@ -68,3 +68,4 @@ plugins:
 nav:
   - 홈: index.md
   - 발간사: 발간사.md
+  - Part 8. 정관: part8/index.md
