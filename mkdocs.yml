@@ -64,8 +64,13 @@ markdown_extensions:
 plugins:
   - search:
       lang: ko
+  - macros
 
 nav:
   - 홈: index.md
   - 발간사: 발간사.md
+  - Part 1. 주제별 역사: part1/index.md
+  - Part 2. 나와 공동체: part2/index.md
+  - Part 3. 역대 임원진: part3/index.md
+  - Part 4. 연대표: part4/index.md
   - Part 8. 정관: part8/index.md
