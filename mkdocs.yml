@@ -70,7 +70,31 @@ nav:
   - 홈: index.md
   - 발간사: 발간사.md
   - Part 1. 주제별 역사: part1/index.md
-  - Part 2. 나와 공동체: part2/index.md
+  - Part 2. 나와 공동체:
+      - 개요: part2/index.md
+      - "‘나’와 이우교육공동체의 역사 쓰기 (박준성)": part2/bak-jun-seong.md
+      - "미미한 방어전도 의미가 있을까? (장지혜)": part2/jang-ji-hye.md
+      - "더불어 같이 사는 멋, 나와 이우공동체 (문진숙)": part2/mun-jin-suk.md
+      - "나와 공동체 (김희경)": part2/gim-hui-gyeong.md
+      - "이우교육공동체와 나 (이현영)": part2/i-hyeon-yeong.md
+      - "공동체와 나 (김영미)": part2/gim-yeong-mi.md
+      - "이우학교는...솟대, 이우교육공동체는...석과불식 (김지수)": part2/gim-ji-su.md
+      - "나와 공동체 (오미남)": part2/o-mi-nam.md
+      - "이우 공동체 – 옹달샘처럼 흘러가길 (한승수)": part2/han-seung-su.md
+      - "공동체와 나 (배인정)": part2/bae-in-jeong.md
+      - "나와 이우 공동체 (문경은)": part2/mun-gyeong-eun.md
+      - "치마 바람 아빠의 이우 생존기(?) (장동현)": part2/jang-dong-hyeon.md
+      - "공동체와 나 (정성미)": part2/jeong-seong-mi.md
+      - "내가 브런치를 하는 이유 (조연옥)": part2/jo-yeon-ok.md
+      - "내 인생 속의 이우학교 (안기영)": part2/an-gi-yeong.md
+      - "나와 공동체 (하길임)": part2/ha-gil-im.md
+      - "내 삶을 가꾸는 힘을 키워준 이우 (김정희)": part2/gim-jeong-hui.md
+      - "청풍과 공동체 (김인현)": part2/gim-in-hyeon.md
+      - "나와 공동체 (정현주)": part2/jeong-hyeon-ju.md
+      - "왜 사니? (이영균)": part2/i-yeong-gyun.md
+      - "나와 공동체, 분회의 기억 (민순기)": part2/min-sun-gi.md
+      - "내 인생의 황금기 (신상열)": part2/sin-sang-yeol.md
+      - "분명 팔자에도 없는 일을 한 거다 (이희란)": part2/i-hui-ran.md
   - Part 3. 역대 임원진: part3/index.md
   - Part 4. 연대표: part4/index.md
   - Part 8. 정관: part8/index.md
