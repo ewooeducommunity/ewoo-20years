@@ -69,7 +69,27 @@ plugins:
 nav:
   - 홈: index.md
   - 발간사: 발간사.md
-  - Part 1. 주제별 역사: part1/index.md
+  - Part 1. 주제별 역사:
+      - 개요: part1/index.md
+      - "1. ‘내일을 여는 학교’ 준비 모임": part1/01-founding-preparation-meeting.md
+      - "2. 대안학교의 필요성과 방향": part1/02-alternative-school-vision.md
+      - "3. 이우교육공동체의 설립과 운영": part1/03-community-founding-and-operation.md
+      - "4. 이우학교의 교육이념과 철학": part1/04-education-philosophy.md
+      - "5. 학교 설립 재정 마련": part1/05-founding-finance.md
+      - "6. 학교 부지 선정과 인가": part1/06-site-selection-and-authorization.md
+      - "7. 학교 교사(校舍) 건립": part1/07-campus-construction.md
+      - "8. 이우학교 교사의 선발과 구성": part1/08-teacher-selection.md
+      - "9. 빚 공동체와 부채탕감 프로젝트": part1/09-debt-community-and-repayment.md
+      - "10. 이우교육공동체와 학교법인 이우학원": part1/10-community-and-school-foundation.md
+      - "11. 이우교육공동체와 지역 활동": part1/11-community-local-activities.md
+      - "12. 이우교육공동체 1기 회원 활동": part1/12-gen1-member-activities.md
+      - "13. 이우교육공동체 1기의 내부 갈등과 수습": part1/13-gen1-internal-conflict.md
+      - "14. 제2기 이우교육공동체의 출범": part1/14-gen2-launch.md
+      - "15. 제2기 이우교육공동체의 조직 운영과 주요 활동": part1/15-gen2-organization-and-activities.md
+      - "16. 함께여는교육연구소 - ‘교육희망’의 연대와 확산": part1/16-education-research-institute.md
+      - "17. 사회적협동조합 사다리 설립과 활동": part1/17-sadari-cooperative.md
+      - "18. 인터뷰: 용수분회 내부 갈등": part1/18-interview-yongsu-branch-conflict.md
+      - "19. 인터뷰: 심명화 회원 지역활동": part1/19-interview-sim-myeonghwa.md
   - Part 2. 나와 공동체:
       - 개요: part2/index.md
       - "‘나’와 이우교육공동체의 역사 쓰기 (박준성)": part2/bak-jun-seong.md
