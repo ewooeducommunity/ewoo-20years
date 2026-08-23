@@ -1,0 +1,379 @@
+/*
+ * 이우 20년사 사이트 — Modern Minimal 테마
+ * Pretendard 본문 + 모노크롬 팔레트 + 넓은 여백 (GitBook·Notion·Vercel Docs 톤).
+ */
+
+/* ---------- Font stack ---------- */
+
+:root {
+  --md-text-font-family:
+    "Pretendard Variable", Pretendard,
+    -apple-system, BlinkMacSystemFont, "system-ui", "Segoe UI",
+    Roboto, "Helvetica Neue", "Noto Sans KR", sans-serif;
+  --md-code-font-family:
+    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+body,
+.md-typeset,
+.md-header,
+.md-tabs,
+.md-footer,
+.md-nav,
+.md-content,
+input,
+button {
+  font-family: var(--md-text-font-family);
+  font-feature-settings: "ss18";  /* Pretendard 스타일 세트 */
+}
+
+.md-typeset code,
+.md-typeset pre {
+  font-family: var(--md-code-font-family);
+}
+
+/* ---------- Color palette overrides ---------- */
+
+/* Light — 순도 높은 흑백 + slate 액센트 */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #ffffff;
+  --md-primary-fg-color--light: #ffffff;
+  --md-primary-fg-color--dark:  #ffffff;
+  --md-primary-bg-color:        #0a0a0a;
+  --md-primary-bg-color--light: #0a0a0acc;
+
+  --md-accent-fg-color:              #3b5162;
+  --md-accent-fg-color--transparent: #3b51620d;
+  --md-accent-bg-color:              #ffffff;
+  --md-accent-bg-color--light:       #ffffffcc;
+
+  --md-default-bg-color:            #ffffff;
+  --md-default-bg-color--light:     #ffffffcc;
+  --md-default-fg-color:            #0a0a0a;
+  --md-default-fg-color--light:     #4a4a4a;
+  --md-default-fg-color--lighter:   #8a8a8a;
+  --md-default-fg-color--lightest:  #ebebeb;
+
+  --md-typeset-a-color:  #3b5162;
+
+  --md-code-bg-color:    #f6f6f4;
+  --md-code-fg-color:    #0a0a0a;
+
+  --md-footer-bg-color:         #ffffff;
+  --md-footer-bg-color--dark:   #f6f6f4;
+  --md-footer-fg-color:         #4a4a4a;
+  --md-footer-fg-color--light:  #4a4a4a;
+  --md-footer-fg-color--lighter: #8a8a8a;
+}
+
+/* Dark — 진짜 검정 + soft 그레이 텍스트 */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #0a0a0a;
+  --md-primary-fg-color--light: #1a1a1a;
+  --md-primary-fg-color--dark:  #000000;
+  --md-primary-bg-color:        #f5f5f5;
+
+  --md-accent-fg-color:              #94a9b8;
+  --md-accent-fg-color--transparent: #94a9b81a;
+
+  --md-default-bg-color:            #0a0a0a;
+  --md-default-bg-color--light:     #0a0a0acc;
+  --md-default-fg-color:            #e5e5e5;
+  --md-default-fg-color--light:     #b0b0b0;
+  --md-default-fg-color--lighter:   #7a7a7a;
+  --md-default-fg-color--lightest:  #232323;
+
+  --md-typeset-a-color:  #b8cbd8;
+
+  --md-code-bg-color:    #1a1a1a;
+  --md-code-fg-color:    #e5e5e5;
+
+  --md-footer-bg-color:         #0a0a0a;
+  --md-footer-bg-color--dark:   #101010;
+  --md-footer-fg-color:         #b0b0b0;
+  --md-footer-fg-color--light:  #b0b0b0;
+  --md-footer-fg-color--lighter: #7a7a7a;
+}
+
+/* ---------- Typography ---------- */
+
+.md-typeset {
+  font-size: 16px;
+  line-height: 1.85;
+  letter-spacing: -0.011em;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-weight: 700;
+  letter-spacing: -0.028em;
+  line-height: 1.35;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.55rem;
+  margin-top: 3.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset h3 {
+  font-size: 1.2rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.md-typeset h4 {
+  font-size: 1rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol {
+  margin-bottom: 1.1em;
+}
+
+/* ---------- Content width & spacing ---------- */
+
+.md-grid {
+  max-width: 1440px;
+}
+
+.md-content {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.md-main__inner {
+  margin-top: 1.6rem;
+}
+
+/* ---------- Header ---------- */
+
+.md-header {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: none;
+  transition: none;
+}
+
+.md-header[data-md-state="shadow"] {
+  box-shadow: none;
+  border-bottom-color: var(--md-default-fg-color--lighter);
+}
+
+.md-header__title,
+.md-header__button,
+.md-header__topic {
+  color: var(--md-default-fg-color);
+  font-weight: 600;
+}
+
+.md-tabs {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Search bar — quieter chrome */
+.md-search__form {
+  background-color: var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+}
+
+.md-search__input::placeholder {
+  color: var(--md-default-fg-color--lighter);
+}
+
+/* ---------- Navigation (sidebar) ---------- */
+
+.md-nav {
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.md-nav__title {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.md-nav__link {
+  color: var(--md-default-fg-color--light);
+  transition: color 0.15s;
+}
+
+.md-nav__link:hover {
+  color: var(--md-default-fg-color);
+}
+
+.md-nav__item .md-nav__link--active,
+.md-nav__link--active {
+  color: var(--md-default-fg-color);
+  font-weight: 600;
+}
+
+/* ---------- Links ---------- */
+
+.md-typeset a {
+  color: var(--md-typeset-a-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.md-typeset a:hover {
+  color: var(--md-default-fg-color);
+  border-bottom-color: var(--md-typeset-a-color);
+}
+
+/* Header / TOC 목록 안의 링크는 언더라인 제거 */
+.md-nav__link,
+.md-header a {
+  border-bottom: none !important;
+}
+
+/* ---------- Blockquote ---------- */
+
+.md-typeset blockquote {
+  border-left: 3px solid var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color--light);
+  padding-left: 1.2rem;
+  margin-left: 0;
+  font-style: normal;
+}
+
+/* ---------- Table ---------- */
+
+.md-typeset table:not([class]) {
+  border: none;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: transparent;
+  color: var(--md-default-fg-color--light);
+  font-weight: 700;
+  border-bottom: 2px solid var(--md-default-fg-color--lighter);
+  padding: 0.8rem 1rem;
+  text-align: left;
+}
+
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding: 0.7rem 1rem;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* ---------- Code ---------- */
+
+.md-typeset code {
+  background-color: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+  padding: 0.12em 0.36em;
+  border-radius: 4px;
+  font-size: 0.88em;
+}
+
+.md-typeset pre > code {
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* ---------- Grid cards (홈) ---------- */
+
+.md-typeset .grid.cards {
+  gap: 1rem;
+}
+
+.md-typeset .grid.cards > *,
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 10px;
+  padding: 1.4rem 1.5rem;
+  box-shadow: none;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.md-typeset .grid.cards > *:hover,
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-default-fg-color--lighter);
+  transform: translateY(-2px);
+}
+
+.md-typeset .grid.cards hr {
+  margin: 0.6rem 0 0.8rem 0;
+  border-color: var(--md-default-fg-color--lightest);
+}
+
+/* ---------- Footer ---------- */
+
+.md-footer {
+  background-color: var(--md-default-bg-color);
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-footer-meta {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color--light);
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-footer__link {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-footer__link:hover {
+  color: var(--md-default-fg-color);
+}
+
+/* ---------- Details / Admonition ---------- */
+
+.md-typeset .admonition,
+.md-typeset details {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  box-shadow: none;
+  font-size: 0.92rem;
+}
+
+/* ---------- Footnote refs ---------- */
+
+.md-typeset .footnote-ref {
+  font-size: 0.72em;
+  padding-left: 0.15em;
+  border: none;
+}
+
+/* ---------- Horizontal rule ---------- */
+
+.md-typeset hr {
+  border-color: var(--md-default-fg-color--lightest);
+  margin: 2.4rem 0;
+}

@@ -1,0 +1,267 @@
+# Part 3. 역대 임원진 — 이우교육공동체 20년사(2024) 부록 173~183쪽 기반
+# 출처: 이우교육공동체 20년사_Part3_역대임원진.docx / .pdf (통합편집본)
+# 마지막 갱신: 2026-08-23
+#
+# 스키마: period, role, name, anchor(문화체육관광부 국어 로마자 표기법 기반, 동명이인은 -2 접미),
+#         notes(선택, 겸직·중도 합류·소스 표기 불확실 등 특이사항)
+#
+# 범위 안내: 이 표는 2001.12. 이우교육공동체 결성 이후 공식 임원(고문/대표·공동대표/부대표/
+# 사무국장·집행위원장/감사)만을 대상으로 한다. 2001.7.1. 설립추진위원회 추진위원 명단과
+# 2001.12.2. 창립회원(총 68명) 명단은 '임원' 직책이 아니므로 이 표에는 포함하지 않았다
+# (Part 1/2 본문에서 별도로 다룰 수 있음). 2023년 이후 임원 정보는 원본 소스 범위 밖으로
+# 추후 자료 확인이 필요하다.
+#
+# role 정규화 규칙: 원문 표기가 항목별로 다를 수 있어 아래 규칙으로 통일했다.
+#   - "공동 대표" / "공동대표" → "대표"
+#   - "회계감사" → "감사"
+# 정규화 이전의 원문 표기가 필요한 경우 notes 필드에 남긴다.
+
+- period: "2001.12~2006.02"
+  role: "고문"
+  name: "이명현"
+  anchor: "i-myeong-hyeon"
+
+- period: "2001.12~2006.02"
+  role: "고문"
+  name: "전보삼"
+  anchor: "jeon-bo-sam"
+
+- period: "2001.12~2003"
+  role: "대표"
+  name: "강지원"
+  anchor: "gang-ji-won"
+  notes: "합류 시점이 소스에 '?~'로 표기되어 정확한 시작일 불명"
+
+- period: "2001.12~2004.05"
+  role: "대표"
+  name: "이종태"
+  anchor: "i-jong-tae"
+
+- period: "2001.12~2004.05"
+  role: "대표"
+  name: "정광필"
+  anchor: "jeong-gwang-pil"
+
+- period: "2001.12~2013.04"
+  role: "대표"
+  name: "하동근"
+  anchor: "ha-dong-geun"
+  notes: "2012년(10기) 소스 원문에 '하동근(?)'로 표기됨 — 해당 임기 재임 여부 불확실"
+
+- period: "2001.12~2004.05"
+  role: "부대표"
+  name: "김미숙"
+  anchor: "gim-mi-suk"
+
+- period: "2001.12~2003"
+  role: "부대표"
+  name: "이재철"
+  anchor: "i-jae-cheol"
+
+- period: "2001.12~2004.05"
+  role: "부대표"
+  name: "홍인표"
+  anchor: "hong-in-pyo"
+
+- period: "2001.12~2003"
+  role: "감사"
+  name: "민재기"
+  anchor: "min-jae-gi"
+
+- period: "2001.12~2003"
+  role: "감사"
+  name: "전호근"
+  anchor: "jeon-ho-geun"
+
+- period: "2002.12~2006.02"
+  role: "고문"
+  name: "채규철"
+  anchor: "chae-gyu-cheol"
+  notes: "2002.12.22. 고문으로 합류(소스 명시)"
+
+- period: "2003~2006.02"
+  role: "고문"
+  name: "강지원"
+  anchor: "gang-ji-won-2"
+
+- period: "2003~2004.05"
+  role: "부대표"
+  name: "김혜영"
+  anchor: "gim-hye-yeong"
+
+- period: "2003~2004.05"
+  role: "부대표"
+  name: "김혜장"
+  anchor: "gim-hye-jang"
+
+- period: "2003~2007.03"
+  role: "사무국장"
+  name: "이재철"
+  anchor: "i-jae-cheol-2"
+
+- period: "2004.05~2006.02"
+  role: "대표"
+  name: "이경재"
+  anchor: "i-gyeong-jae"
+
+- period: "2004.05~2006.02"
+  role: "부대표"
+  name: "남미경"
+  anchor: "nam-mi-gyeong"
+
+- period: "2004.05~2006.02"
+  role: "부대표"
+  name: "신상철"
+  anchor: "sin-sang-cheol"
+
+- period: "2004.05~2006.02"
+  role: "부대표"
+  name: "이세용"
+  anchor: "i-se-yong"
+
+- period: "2004.05~2009.05"
+  role: "부대표"
+  name: "이재철"
+  anchor: "i-jae-cheol-3"
+
+- period: "2005.02~2009.05"
+  role: "부대표"
+  name: "이태성"
+  anchor: "i-tae-seong"
+
+- period: "2006.02~2009.05"
+  role: "대표"
+  name: "신상열"
+  anchor: "sin-sang-yeol"
+
+- period: "2006.02~2009.05"
+  role: "부대표"
+  name: "민순기"
+  anchor: "min-sun-gi"
+
+- period: "2006.02~2009.05"
+  role: "부대표"
+  name: "박배영"
+  anchor: "bak-bae-yeong"
+
+- period: "2006.02~2009.05"
+  role: "부대표"
+  name: "전호근"
+  anchor: "jeon-ho-geun-2"
+
+- period: "2007.03~2009.05"
+  role: "감사"
+  name: "신명철"
+  anchor: "sin-myeong-cheol"
+
+- period: "2008.03~2009.05"
+  role: "부대표"
+  name: "신희준"
+  anchor: "sin-hui-jun"
+
+- period: "2008.03~2009.05"
+  role: "부대표"
+  name: "전숙례"
+  anchor: "jeon-suk-rye"
+
+- period: "2008.03~2009.05"
+  role: "부대표"
+  name: "최화순"
+  anchor: "choe-hwa-sun"
+
+- period: "2009.05~2015.04"
+  role: "대표"
+  name: "신명철"
+  anchor: "sin-myeong-cheol-2"
+
+- period: "2009.05~2013.12"
+  role: "부대표"
+  name: "민재기"
+  anchor: "min-jae-gi-2"
+
+- period: "2009.05~2013.12"
+  role: "부대표"
+  name: "박명규"
+  anchor: "bak-myeong-gyu"
+
+- period: "2009.05~2011"
+  role: "부대표"
+  name: "백희봉"
+  anchor: "baek-hui-bong"
+
+- period: "2009.05~2011"
+  role: "감사"
+  name: "전명진"
+  anchor: "jeon-myeong-jin"
+
+- period: "2010.04~2013.04"
+  role: "감사"
+  name: "박명규"
+  anchor: "bak-myeong-gyu-2"
+  notes: "2010.04~2013.04 기간 부대표직과 겸임(소스 원문 그대로 반영, 겸직 사유 불명)"
+
+- period: "2012.04~2013.12"
+  role: "부대표"
+  name: "김인현"
+  anchor: "gim-in-hyeon"
+
+- period: "2013.04~2013.12"
+  role: "감사"
+  name: "김인현"
+  anchor: "gim-in-hyeon-2"
+
+- period: "2013.12~2014.11"
+  role: "대표"
+  name: "장석"
+  anchor: "jang-seok"
+
+- period: "2013.12~2014.11"
+  role: "집행위원장"
+  name: "김광범"
+  anchor: "gim-gwang-beom"
+
+- period: "2013.12~2014.04"
+  role: "감사"
+  name: "한동건"
+  anchor: "han-dong-geon"
+  notes: "소스 각주: 2013년12월 임시총회 회의록에 '유임' 표현이 있으나 이우10년사 임원 목록에는 없음 — 재임 여부 논란"
+
+- period: "2014.04~2015.04"
+  role: "감사"
+  name: "김인현"
+  anchor: "gim-in-hyeon-3"
+
+- period: "2015.04~2019.03"
+  role: "대표"
+  name: "박형영"
+  anchor: "bak-hyeong-yeong"
+
+- period: "2015.04~2019.03"
+  role: "부대표"
+  name: "김광범"
+  anchor: "gim-gwang-beom-2"
+
+- period: "2015.04~2016.04"
+  role: "감사"
+  name: "민순기"
+  anchor: "min-sun-gi-2"
+
+- period: "2016.04~2019.03"
+  role: "감사"
+  name: "전창배"
+  anchor: "jeon-chang-bae"
+
+- period: "2019.03~2023"
+  role: "대표"
+  name: "장지혜"
+  anchor: "jang-ji-hye"
+
+- period: "2019.03~2020.05"
+  role: "감사"
+  name: "현영창"
+  anchor: "hyeon-yeong-chang"
+
+- period: "2020.05~2023"
+  role: "감사"
+  name: "김인출"
+  anchor: "gim-in-chul"
