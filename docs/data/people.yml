@@ -1,0 +1,379 @@
+# Person master registry — canonical anchor per person.
+# Anchors follow 국어의 로마자 표기법 (문화체육관광부 고시).
+# Used by:
+#   - executives.yml (임원 임기별 anchor)
+#   - part2/<slug>.md (저자 파일명 = canonical anchor)
+#   - part1/part2 본문 크로스링크
+# 마지막 갱신: 2026-08-23
+
+- name: "안기영"
+  anchor: an-gi-yeong
+  roles:
+    - part: 2
+      slug: an-gi-yeong
+
+- name: "배인정"
+  anchor: bae-in-jeong
+  roles:
+    - part: 2
+      slug: bae-in-jeong
+
+- name: "백희봉"
+  anchor: baek-hui-bong
+  roles:
+    - part: 3
+      entries: [baek-hui-bong]
+
+- name: "박배영"
+  anchor: bak-bae-yeong
+  aliases: [park-bae-yeong]
+  roles:
+    - part: 3
+      entries: [bak-bae-yeong]
+
+- name: "박형영"
+  anchor: bak-hyeong-yeong
+  aliases: [park-hyeong-yeong]
+  roles:
+    - part: 3
+      entries: [bak-hyeong-yeong]
+
+- name: "박준성"
+  anchor: bak-jun-seong
+  roles:
+    - part: 2
+      slug: bak-jun-seong
+
+- name: "박명규"
+  anchor: bak-myeong-gyu
+  aliases: [park-myeong-gyu]
+  roles:
+    - part: 3
+      entries: [bak-myeong-gyu, bak-myeong-gyu-2]
+
+- name: "채규철"
+  anchor: chae-gyu-cheol
+  roles:
+    - part: 3
+      entries: [chae-gyu-cheol]
+
+- name: "최화순"
+  anchor: choe-hwa-sun
+  aliases: [choi-hwa-sun]
+  roles:
+    - part: 3
+      entries: [choe-hwa-sun]
+
+- name: "강지원"
+  anchor: gang-ji-won
+  aliases: [kang-ji-won]
+  roles:
+    - part: 3
+      entries: [gang-ji-won, gang-ji-won-2]
+
+- name: "김광범"
+  anchor: gim-gwang-beom
+  aliases: [kim-gwang-beom]
+  roles:
+    - part: 3
+      entries: [gim-gwang-beom, gim-gwang-beom-2]
+
+- name: "김희경"
+  anchor: gim-hui-gyeong
+  roles:
+    - part: 2
+      slug: gim-hui-gyeong
+
+- name: "김혜장"
+  anchor: gim-hye-jang
+  aliases: [kim-hye-jang]
+  roles:
+    - part: 3
+      entries: [gim-hye-jang]
+
+- name: "김혜영"
+  anchor: gim-hye-yeong
+  aliases: [kim-hye-yeong]
+  roles:
+    - part: 3
+      entries: [gim-hye-yeong]
+
+- name: "김인출"
+  anchor: gim-in-chul
+  aliases: [kim-in-chul]
+  roles:
+    - part: 3
+      entries: [gim-in-chul]
+
+- name: "김인현"
+  anchor: gim-in-hyeon
+  aliases: [kim-in-hyeon]
+  roles:
+    - part: 3
+      entries: [gim-in-hyeon, gim-in-hyeon-2, gim-in-hyeon-3]
+    - part: 2
+      slug: gim-in-hyeon
+
+- name: "김정희"
+  anchor: gim-jeong-hui
+  roles:
+    - part: 2
+      slug: gim-jeong-hui
+
+- name: "김지수"
+  anchor: gim-ji-su
+  roles:
+    - part: 2
+      slug: gim-ji-su
+
+- name: "김미숙"
+  anchor: gim-mi-suk
+  aliases: [kim-mi-suk]
+  roles:
+    - part: 3
+      entries: [gim-mi-suk]
+
+- name: "김영미"
+  anchor: gim-yeong-mi
+  roles:
+    - part: 2
+      slug: gim-yeong-mi
+
+- name: "하동근"
+  anchor: ha-dong-geun
+  roles:
+    - part: 3
+      entries: [ha-dong-geun]
+
+- name: "하길임"
+  anchor: ha-gil-im
+  roles:
+    - part: 2
+      slug: ha-gil-im
+
+- name: "한동건"
+  anchor: han-dong-geon
+  roles:
+    - part: 3
+      entries: [han-dong-geon]
+
+- name: "한승수"
+  anchor: han-seung-su
+  roles:
+    - part: 2
+      slug: han-seung-su
+
+- name: "홍인표"
+  anchor: hong-in-pyo
+  roles:
+    - part: 3
+      entries: [hong-in-pyo]
+
+- name: "현영창"
+  anchor: hyeon-yeong-chang
+  aliases: [hyun-yeong-chang]
+  roles:
+    - part: 3
+      entries: [hyeon-yeong-chang]
+
+- name: "이경재"
+  anchor: i-gyeong-jae
+  aliases: [lee-gyeong-jae]
+  roles:
+    - part: 3
+      entries: [i-gyeong-jae]
+
+- name: "이희란"
+  anchor: i-hui-ran
+  roles:
+    - part: 2
+      slug: i-hui-ran
+
+- name: "이현영"
+  anchor: i-hyeon-yeong
+  roles:
+    - part: 2
+      slug: i-hyeon-yeong
+
+- name: "이재철"
+  anchor: i-jae-cheol
+  aliases: [lee-jae-cheol]
+  roles:
+    - part: 3
+      entries: [i-jae-cheol, i-jae-cheol-2, i-jae-cheol-3]
+
+- name: "이종태"
+  anchor: i-jong-tae
+  aliases: [lee-jong-tae]
+  roles:
+    - part: 3
+      entries: [i-jong-tae]
+
+- name: "이명현"
+  anchor: i-myeong-hyeon
+  aliases: [lee-myeong-hyeon]
+  roles:
+    - part: 3
+      entries: [i-myeong-hyeon]
+
+- name: "이세용"
+  anchor: i-se-yong
+  aliases: [lee-se-yong]
+  roles:
+    - part: 3
+      entries: [i-se-yong]
+
+- name: "이태성"
+  anchor: i-tae-seong
+  aliases: [lee-tae-seong]
+  roles:
+    - part: 3
+      entries: [i-tae-seong]
+
+- name: "이영균"
+  anchor: i-yeong-gyun
+  roles:
+    - part: 2
+      slug: i-yeong-gyun
+
+- name: "장동현"
+  anchor: jang-dong-hyeon
+  roles:
+    - part: 2
+      slug: jang-dong-hyeon
+
+- name: "장지혜"
+  anchor: jang-ji-hye
+  roles:
+    - part: 3
+      entries: [jang-ji-hye]
+    - part: 2
+      slug: jang-ji-hye
+
+- name: "장석"
+  anchor: jang-seok
+  roles:
+    - part: 3
+      entries: [jang-seok]
+
+- name: "전보삼"
+  anchor: jeon-bo-sam
+  roles:
+    - part: 3
+      entries: [jeon-bo-sam]
+
+- name: "전창배"
+  anchor: jeon-chang-bae
+  roles:
+    - part: 3
+      entries: [jeon-chang-bae]
+
+- name: "전호근"
+  anchor: jeon-ho-geun
+  roles:
+    - part: 3
+      entries: [jeon-ho-geun, jeon-ho-geun-2]
+
+- name: "전명진"
+  anchor: jeon-myeong-jin
+  roles:
+    - part: 3
+      entries: [jeon-myeong-jin]
+
+- name: "전숙례"
+  anchor: jeon-suk-rye
+  roles:
+    - part: 3
+      entries: [jeon-suk-rye]
+
+- name: "정광필"
+  anchor: jeong-gwang-pil
+  roles:
+    - part: 3
+      entries: [jeong-gwang-pil]
+
+- name: "정현주"
+  anchor: jeong-hyeon-ju
+  roles:
+    - part: 2
+      slug: jeong-hyeon-ju
+
+- name: "정성미"
+  anchor: jeong-seong-mi
+  roles:
+    - part: 2
+      slug: jeong-seong-mi
+
+- name: "조연옥"
+  anchor: jo-yeon-ok
+  roles:
+    - part: 2
+      slug: jo-yeon-ok
+
+- name: "민재기"
+  anchor: min-jae-gi
+  roles:
+    - part: 3
+      entries: [min-jae-gi, min-jae-gi-2]
+
+- name: "민순기"
+  anchor: min-sun-gi
+  roles:
+    - part: 3
+      entries: [min-sun-gi, min-sun-gi-2]
+    - part: 2
+      slug: min-sun-gi
+
+- name: "문경은"
+  anchor: mun-gyeong-eun
+  roles:
+    - part: 2
+      slug: mun-gyeong-eun
+
+- name: "문진숙"
+  anchor: mun-jin-suk
+  roles:
+    - part: 2
+      slug: mun-jin-suk
+
+- name: "남미경"
+  anchor: nam-mi-gyeong
+  roles:
+    - part: 3
+      entries: [nam-mi-gyeong]
+
+- name: "오미남"
+  anchor: o-mi-nam
+  roles:
+    - part: 2
+      slug: o-mi-nam
+
+- name: "신희준"
+  anchor: sin-hui-jun
+  aliases: [shin-hui-jun]
+  roles:
+    - part: 3
+      entries: [sin-hui-jun]
+
+- name: "신명철"
+  anchor: sin-myeong-cheol
+  aliases: [shin-myeong-cheol]
+  roles:
+    - part: 3
+      entries: [sin-myeong-cheol, sin-myeong-cheol-2]
+
+- name: "신상철"
+  anchor: sin-sang-cheol
+  aliases: [shin-sang-cheol]
+  roles:
+    - part: 3
+      entries: [sin-sang-cheol]
+
+- name: "신상열"
+  anchor: sin-sang-yeol
+  aliases: [shin-sang-yeol]
+  roles:
+    - part: 3
+      entries: [sin-sang-yeol]
+    - part: 2
+      slug: sin-sang-yeol
