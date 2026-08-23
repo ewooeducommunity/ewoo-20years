@@ -26,6 +26,7 @@ def convert(source: Path, output_dir: Path) -> Path:
             "-o", str(md_out), str(source),
         ],
         check=True,
+        timeout=120,
     )
     return md_out
 

@@ -64,7 +64,8 @@ markdown_extensions:
 plugins:
   - search:
       lang: ko
-  - macros
+  - macros:
+      module_name: hooks
 
 nav:
   - 홈: index.md
