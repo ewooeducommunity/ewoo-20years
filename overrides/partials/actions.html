@@ -1,0 +1,10 @@
+{#-
+  제목 오른쪽의 'GitHub에서 고치기' 버튼.
+  Material 원본: material/templates/partials/actions.html (9.7.x)
+-#}
+{% if page.edit_url and "content.action.edit" in features %}
+  <a href="{{ page.edit_url }}" class="md-content__button ew-action" rel="edit" target="_blank">
+    {% include ".icons/material/pencil-outline.svg" %}
+    <span>고치기 제안</span>
+  </a>
+{% endif %}

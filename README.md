@@ -58,6 +58,15 @@
 
 한글 오피스가 없는 환경이라면 원본 소유자에게 DOCX 변환본을 요청하세요.
 
+## 디자인·테마
+
+회색 셸 + 왼쪽 사이드바 + 흰 본문 패널로 이루어진 문서형 레이아웃입니다 (docs.aside.com 참고).
+
+- 스타일: `docs/stylesheets/extra.css` — 맨 위 `1. 토큰` 에서 색·폭·모서리를 한 곳에서 바꿀 수 있음
+- 템플릿: `overrides/partials/` — 헤더(브랜드·검색·하단 도구), 제목 위 묶음 이름, 고치기 제안 버튼, 이전/다음 카드
+- 서체: Pretendard Variable(본문), Geist Mono(코드) — `overrides/main.html` 에서 CDN 로드
+- 왼쪽 목차의 묶음(시작하기 / Part 1 / Part 2 / 기록과 자료)은 `mkdocs.yml` 의 `nav` 에서 관리
+
 ## 파일·URL 컨벤션
 
 - 파일명: 한글 그대로 사용 (예: `발간사.md`, `part1/01-개교의-배경.md`).

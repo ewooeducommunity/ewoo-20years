@@ -1,0 +1,17 @@
+{#-
+  제목 위에 이 글이 속한 묶음 이름(예: Part 1. 주제별 역사)을 보여 준다.
+  묶음의 첫 페이지로 연결한다.
+-#}
+{% set section = page.parent %}
+{% if section and section.children and page.file.src_uri != 'index.md' %}
+  {% set first = section.children | first %}
+  <nav class="md-path" aria-label="상위 묶음">
+    <ol class="md-path__list">
+      <li class="md-path__item">
+        <a href="{{ first.url | url }}" class="md-path__link">
+          <span class="md-ellipsis">{{ section.title }}</span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+{% endif %}
