@@ -1,0 +1,64 @@
+{#-
+  이우 20년사 헤더.
+  데스크톱(≥1220px)에서는 왼쪽 사이드바 꼭대기에 고정되어
+  [브랜드] → [검색] 순으로 쌓이고, 테마 토글·GitHub 링크는 사이드바 맨 아래로 내려간다.
+  모바일에서는 Material 기본 헤더처럼 동작한다.
+  Material 원본: material/templates/partials/header.html (9.7.x)
+-#}
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+    <label class="md-header__button md-icon" for="__drawer">
+      {% set icon = config.theme.icon.menu or "material/menu" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </label>
+
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}"
+       class="ew-brand" title="{{ config.site_name | e }}" data-md-component="logo">
+      <svg class="ew-brand__mark" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="9" cy="12" r="6.25" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="15" cy="12" r="6.25" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      </svg>
+      <span class="ew-brand__name">이우교육공동체</span>
+      <span class="ew-brand__sub">20년사</span>
+    </a>
+
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">{{ config.site_name }}</span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            {% if page.meta and page.meta.title %}{{ page.meta.title }}{% else %}{{ page.title }}{% endif %}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    {% if "material/search" in config.plugins %}
+      {% set search = config.plugins["material/search"] | attr("config") %}
+      {% if search.enabled %}
+        <label class="md-header__button md-icon" for="__search">
+          {% set icon = config.theme.icon.search or "material/magnify" %}
+          {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+        {% include "partials/search.html" %}
+      {% endif %}
+    {% endif %}
+
+    <div class="ew-shell-foot">
+      {% if config.repo_url %}
+        <a class="ew-shell-foot__repo" href="{{ config.repo_url }}" target="_blank" rel="noopener">
+          <span>GitHub 저장소</span>
+          {% include ".icons/material/arrow-top-right.svg" %}
+        </a>
+      {% endif %}
+      {% if config.theme.palette and not config.theme.palette is mapping %}
+        {% include "partials/palette.html" %}
+      {% endif %}
+    </div>
+    {% if config.theme.palette and not config.theme.palette is mapping %}
+      {% include "partials/javascripts/palette.html" %}
+    {% endif %}
+  </nav>
+</header>

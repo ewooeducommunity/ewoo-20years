@@ -15,7 +15,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.sections
-    - navigation.top
+    - navigation.path
     - navigation.footer
     - toc.follow
     - search.suggest
@@ -28,18 +28,16 @@ theme:
       primary: white
       accent: black
       toggle:
-        icon: material/weather-night
-        name: 다크 모드로 전환
+        icon: material/moon-waning-crescent
+        name: 어두운 화면으로 전환
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: white
       toggle:
-        icon: material/weather-sunny
-        name: 라이트 모드로 전환
-  font:
-    text: Noto Sans KR
-    code: JetBrains Mono
+        icon: material/white-balance-sunny
+        name: 밝은 화면으로 전환
+  font: false   # Pretendard·Geist Mono는 overrides/main.html 에서 불러옴
   icon:
     repo: fontawesome/brands/github
 
@@ -56,6 +54,9 @@ markdown_extensions:
       permalink: true
       permalink_title: 이 문단으로 링크
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
@@ -69,8 +70,9 @@ plugins:
       module_name: hooks
 
 nav:
-  - 홈: index.md
-  - 발간사: 발간사.md
+  - 시작하기:
+      - 홈: index.md
+      - 발간사: 발간사.md
   - Part 1. 주제별 역사:
       - 개요: part1/index.md
       - "1. ‘내일을 여는 학교’ 준비 모임": part1/01-founding-preparation-meeting.md
@@ -117,7 +119,8 @@ nav:
       - "나와 공동체, 분회의 기억 (민순기)": part2/min-sun-gi.md
       - "내 인생의 황금기 (신상열)": part2/sin-sang-yeol.md
       - "분명 팔자에도 없는 일을 한 거다 (이희란)": part2/i-hui-ran.md
-  - Part 3. 역대 임원진: part3/index.md
-  - Part 4. 연대표: part4/index.md
-  - Part 8. 정관: part8/index.md
-  - 자료실: 자료실.md
+  - 기록과 자료:
+      - Part 3. 역대 임원진: part3/index.md
+      - Part 4. 연대표: part4/index.md
+      - Part 8. 정관: part8/index.md
+      - 자료실: 자료실.md

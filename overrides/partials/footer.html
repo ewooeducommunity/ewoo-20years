@@ -1,0 +1,36 @@
+{#-
+  이전/다음 글 카드 + 짧은 하단 문구.
+  Material 원본: material/templates/partials/footer.html (9.7.x)
+-#}
+<footer class="md-footer">
+  {% if "navigation.footer" in features and (page.previous_page or page.next_page) %}
+    {% if page.meta and page.meta.hide %}
+      {% set hidden = "hidden" if "footer" in page.meta.hide %}
+    {% endif %}
+    <nav class="md-footer__inner ew-pager" aria-label="{{ lang.t('footer') }}" {{ hidden }}>
+      {% if page.previous_page %}
+        <a href="{{ page.previous_page.url | url }}" class="md-footer__link md-footer__link--prev"
+           aria-label="이전 글: {{ page.previous_page.title | e }}">
+          <span class="ew-pager__dir">
+            {% include ".icons/material/chevron-left.svg" %}이전
+          </span>
+          <span class="ew-pager__title">{{ page.previous_page.title }}</span>
+        </a>
+      {% endif %}
+      {% if page.next_page %}
+        <a href="{{ page.next_page.url | url }}" class="md-footer__link md-footer__link--next"
+           aria-label="다음 글: {{ page.next_page.title | e }}">
+          <span class="ew-pager__dir">
+            다음{% include ".icons/material/chevron-right.svg" %}
+          </span>
+          <span class="ew-pager__title">{{ page.next_page.title }}</span>
+        </a>
+      {% endif %}
+    </nav>
+  {% endif %}
+  <div class="md-footer-meta">
+    <div class="md-footer-meta__inner">
+      © 이우교육공동체. 본문의 저작권은 각 필자와 이우교육공동체에 있습니다.
+    </div>
+  </div>
+</footer>
