@@ -13,6 +13,9 @@ tags: [개요]
 2기 공동체로의 전환, 사회적협동조합 사다리 설립에 이르기까지의 과정을
 다룹니다.
 
+![이우학교 설계 스케치, 조감도, 학교 부지 항공사진](../images/part1/p1-02.jpg){ loading=lazy }
+{: .ew-figure }
+
 ## 목차
 
 1. [‘내일을 여는 학교’ 준비 모임](01-founding-preparation-meeting.md)

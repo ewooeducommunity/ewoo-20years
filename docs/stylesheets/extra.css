@@ -1178,3 +1178,48 @@ body {
   margin-left: 3px;
   padding-left: 17px;
 }
+
+/* ==========================================================================
+   본문 사진 (원본 20년사의 사진·도표)
+   - 사진 문단: { .ew-figure }, 두 장 나란히: { .ew-figure .ew-pair }
+   - 사진 설명 문단: { .ew-caption }
+   ========================================================================== */
+.md-typeset p.ew-figure {
+  margin: 28px 0 8px;
+  text-align: center;
+  line-height: 0;
+}
+
+.md-typeset p.ew-figure img {
+  max-width: 100%;
+  max-height: 480px;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+  vertical-align: top;
+}
+
+.md-typeset p.ew-pair {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.md-typeset p.ew-pair img {
+  min-width: 0;
+  max-width: calc(50% - 4px);
+  object-fit: contain;
+}
+
+.md-typeset p.ew-figure + p:not(.ew-caption) {
+  margin-top: 24px;
+}
+
+.md-typeset p.ew-caption {
+  margin: 0 auto 28px;
+  max-width: 560px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ew-muted);
+}
